@@ -12,8 +12,8 @@ app.use(bodyParser.urlencoded({
 
 app.use(express.static("public"));
 
-app.listen(3000, function() {
-    console.log("Server is running on port 3000. Bugaga.");
+app.listen(process.env.PORT || 3000, function() {
+    console.log("Server is running on port 3000 and maybe on Heroku. Bugaga.");
 });
 
 app.get("/", function(req, res) {
@@ -77,7 +77,7 @@ app.post("/", function(req, res) {
         }
     });
 
-    console.log(firstName + " " + lastName + " " + email);
+    console.log("DATA: " + firstName + " " + lastName + " " + email);
 });
 
 
