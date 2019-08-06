@@ -58,7 +58,7 @@ app.post("/", function(req, res) {
         url: "https://us20.api.mailchimp.com/3.0/lists/91e0ed23fa",
         method: "POST",
         headers: {
-            "Authorization": "nikolai1 1101b1c7153e8d9c7a5254601599e6df-us20"
+            "Authorization": "nikolai1 63a71deb3e71e45df1d77313e793b3f2-us20"
         },
         body: jsonData,
     };
